@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: product
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true  # SQL 포매팅 (가독성 높이기)
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:data.sql
+
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+
+springdoc:
+  api-docs:
+    enabled: true  # API 문서 생성 활성화
+  swagger-ui:
+    enabled: true  # Swagger UI 활성화
