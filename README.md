@@ -9,7 +9,7 @@
 
 ## 구현 범위
 * ### swagger UI 구현
-  : localhost:8080/swagger-ui/index.htm 를 통해 API를 확인할 수 있다.
+  : localhost:8080/swagger-ui/index.html 를 통해 API를 확인할 수 있다.
 * ### Front 페이지 구현
   : localhost:8080/ 페이지 진입시, API 통신을 할 수 있는 화면을 제공.
 * ### API 설명
@@ -43,8 +43,12 @@
   
   
 ## 코드 빌드, 테스트, 실행 방법
+* 빌드 : 프로젝트 폴더에서 ./gradlew clean build 실행
+* 실행 : ./gradlew bootRun 실행
+* 테스트 : (화면) localhost:8080/ or localhost:8080/swagger-ui/index.html 에서 API 테스트
 
 ## ERD
+
 https://github.com/kkjaeeun/musinsa/blob/master/ERD.png
 
 ## 테이블 정의
