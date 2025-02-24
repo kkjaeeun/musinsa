@@ -45,6 +45,7 @@
 ## 코드 빌드, 테스트, 실행 방법
 
 ## ERD
+https://github.com/kkjaeeun/musinsa/blob/master/ERD.png
 
 ## 테이블 정의
 1. brand 테이블
